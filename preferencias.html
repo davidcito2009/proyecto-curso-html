@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="faviconleon.ico" type="image/x-icon">
     <title>Paulo londra, el representante de rap Argentino </title>
 
-        <style>
+    <style>
         body {
             font-family: "Lucida Console", "Courier New", monospace;
             background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
@@ -84,6 +84,60 @@
             text-align: center;
             clear: both;
         }
+
+        /* ===========================
+                 wCSS RESPONSIVO 
+           =========================== */
+        @media screen and (max-width: 1024px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            table {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            ul li {
+                float: none;
+                width: 100%;
+            }
+
+            li a {
+                text-align: left;
+                padding: 12px 16px;
+            }
+
+            table {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+                padding: 8px;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+                width: 100%;
+                display: block;
+                overflow-x: auto; /* permite scroll horizontal en pantallas muy pequeñas */
+            }
+
+            td, th {
+                padding: 8px;
+            }
+        }
+        /* ===========================
+           FIN CSS RESPONSIVO
+           =========================== */
     </style>
 </head>
 <body>
@@ -145,13 +199,13 @@
         </table>
     </div>
 
-
-
-
     <footer class="footer">
         <p>Derechos reservados &copy; 2025
             by David Reyes
         </p>
     </footer>
+</body>
+</html>
+
 </body>
 </html>
