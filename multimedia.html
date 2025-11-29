@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="faviconleon.ico" type="image/x-icon">
-    <title>Paulo londra, el representante de rap Argentino </title>
+    <title>Paulo Londra - Multimedia</title>
 
-        <style>
+    <style>
         body {
             font-family: "Lucida Console", "Courier New", monospace;
             background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
@@ -78,6 +78,7 @@
             display: flex;
             justify-content: center;
         }
+
         .footer {
             background-color: #333;
             color: #FFF;
@@ -85,66 +86,86 @@
             text-align: center;
             clear: both;
         }
+
+        /* ============================= */
+        /*        RESPONSIVE MEDIA       */
+        /* ============================= */
+
+        @media (max-width: 900px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                float: none;
+                width: 100%;
+            }
+
+            video, audio {
+                width: 90%;
+            }
+
+            div.gallery {
+                float: none;
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
     </style>
 </head>
 <body>
-    
+
     <header>
-        <h1>Paulo londra</h1>
+        <h1>Paulo Londra</h1>
         <nav>
             <ul>
-                <li><a href="index.html" > Inicio</a></li>
-                <li><a href="preferencias.html" > Preferencias</a></li>
-                <li><a class = "active" href="multimedia.html" > Multimedia</a></li>
-                <li><a href="contacto.html" > Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a class="active" href="multimedia.html">Multimedia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
 
     <div class="centrado">
-        <video class = "centrado" src="/assets/videos/Paulolondra.mp4" muted controls></video>
+        <video src="/assets/videos/Paulolondra.mp4" muted controls></video>
     </div>
-    
+
     <div class="centrado">
-        <audio class = "centrado" src="/assets/audios/Paulo Londra - Sigan Hablando de mi (official Audio)_1739809674844.m4a" controls ></audio>
+        <audio src="/assets/audios/Paulo Londra - Sigan Hablando de mi (official Audio)_1739809674844.m4a" controls></audio>
     </div>
 
-    <section class = "centrado">
-    
-    <div class="gallery">
-        <div class = "desc">Paulo de pequeño</div>
-        <a href="/assets/img/paulolondranene.webp" target="_blank"><img src="/assets/img/paulolondranene.webp" alt="De nene"></a>
-    </div>
+    <section class="centrado">
+        <div class="gallery">
+            <div class="desc">Paulo de pequeño</div>
+            <a href="/assets/img/paulolondranene.webp" target="_blank"><img src="/assets/img/paulolondranene.webp"></a>
+        </div>
 
-    <div class="gallery">
-        <div class = "desc">Paulo en el quinto escalon</div>
-        <a href="/assets/img/pauloLondraFreestyle.webp" target="_blank"><img src="/assets/img/pauloLondraFreestyle.webp" alt="De Freestyle"></a>
-    </div>
+        <div class="gallery">
+            <div class="desc">Paulo en el quinto escalón</div>
+            <a href="/assets/img/pauloLondraFreestyle.webp" target="_blank"><img src="/assets/img/pauloLondraFreestyle.webp"></a>
+        </div>
 
-    <div class="gallery">
-        <div class = "desc">Paulo en su adolescencia</div>
-        <a href="/assets/img/paulolondraadolecente.jpg" target="_blank"><img src="/assets/img/paulolondraadolecente.jpg" alt="En la pubertad"></a>
-    </div>
-    
-    <div class="gallery">
-        <div class = "desc">Paulo en su mejor momento</div>
-        <a href="/assets/img/paulolondra2018.webp" target="_blank"><img src="/assets/img/paulolondra2018.webp" alt="En su prime"></a>
-    </div>
+        <div class="gallery">
+            <div class="desc">Paulo en su adolescencia</div>
+            <a href="/assets/img/paulolondraadolecente.jpg" target="_blank"><img src="/assets/img/paulolondraadolecente.jpg"></a>
+        </div>
 
-    <div class="gallery">
-        <div class = "desc">Paulo en la actualidad</div>
-        <a href="/assets/img/Paulolondra2025.webp" target="_blank"><img src="/assets/img/Paulolondra2025.webp" alt="Actualmente"></a>
-    </div>
+        <div class="gallery">
+            <div class="desc">Paulo en su mejor momento</div>
+            <a href="/assets/img/paulolondra2018.webp" target="_blank"><img src="/assets/img/paulolondra2018.webp"></a>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Paulo en la actualidad</div>
+            <a href="/assets/img/Paulolondra2025.webp" target="_blank"><img src="/assets/img/Paulolondra2025.webp"></a>
+        </div>
     </section>
 
-    
-
-
     <footer class="footer">
-        <p>Derechos reservados &copy; 2025
-            by David Reyes
-        </p>
+        <p>Derechos reservados © 2025 by David Reyes</p>
     </footer>
 </body>
 </html>
