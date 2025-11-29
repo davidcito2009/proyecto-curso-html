@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="faviconleon.ico" type="image/x-icon">
-    <title>Paulo londra, el representante de rap Argentino </title>
+    <title>Paulo Londra, el representante de rap Argentino</title>
 
-        <style>
+    <style>
         body {
             font-family: "Lucida Console", "Courier New", monospace;
             background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
@@ -53,39 +53,47 @@
             color: #92a4ff;
         }
 
-        input[type=text],
-        input[type=email],
-        textarea,
-        select {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
         }
 
-        input[type=submit] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        div.contenedor-formulario {
-            border-radius: 5px;
-            background-color: #f2f2f2;
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
             padding: 20px;
         }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
         .footer {
             background-color: #333;
             color: #FFF;
@@ -93,64 +101,104 @@
             text-align: center;
             clear: both;
         }
+
+
+        /* =================================================== */
+        /*                 ESTILOS RESPONSIVOS                */
+        /* =================================================== */
+
+        @media (max-width: 900px) {
+            /* Quitar floats para que nada se rompa */
+            .image, .image2, .article {
+                float: none;
+                max-width: 100%;
+                margin: 0 auto 20px auto;
+                display: block;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            h2, h3, h4, h5 {
+                text-align: center;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            /* Menú se vuelve vertical */
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                float: none;
+                width: 100%;
+            }
+
+            nav li a {
+                padding: 12px;
+            }
+
+            article img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
-    
+
     <header>
-        <h1>Paulo londra</h1>
+        <h1>Paulo Londra</h1>
         <nav>
             <ul>
-                <li><a href="index.html" > Inicio</a></li>
-                <li><a href="preferencias.html" > Preferencias</a></li>
-                <li><a href="multimedia.html" > Multimedia</a></li>
-                <li><a class = "active" href="contacto.html" > Contacto</a></li>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <div class="contenedor-formulario">
-        <form>
-            <label for="nombre">nombre: </label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe aqui tu nombre" required>
-            <label for="apellido">apellido: </label>
-            <input type="text" id="apellido" name="apellido" placeholder="Escribe aqui tu apellido" required>
-            <label for="mail">mail: </label>
-            <input type="text" id="mail" name="mail" placeholder="Escribe aqui tu mail" required>
-            <select name="pais" id="pais">
-                <option value="Argentina">Argentina</option>
-                <option value="Portugal">Portugal</option>
-                <option value="Mexico">Mexico</option>
-                <option value="Honduras">Honduras</option>
-                <option value="Venezuela">Venezuela</option>
-                <option value="Uruguauy">Uruguauy</option>
-                <option value="Paraguay">Paraguay</option>
-                <option value="Bolivia">Bolivia</option>
-                <option value="Estados Unidos">Estados Unidos</option>
-                <option value="Pakistan">Pakistan</option>
-                <option value="Mongolia">Mongolia</option>
-                <option value="Uzbekistan">Uzbekistan</option>
-            </select>
-            <label for="comentario">comentario:</label>
-            <textarea name="comentario" id="comentario" placeholder="Escribe aqui tu comentario"> </textarea>
+    <h2 style="margin: 15px;">Paulo, el niño de Córdoba</h2>
+    <hr>
 
-            <label for="motivo" id="motivo" name="motivo"> </label>
-            <input type="radio" id="motivo" name="motivo"><i>Soy fan de Paulo Londra</i>
-            <input type="radio" id="motivo" name="motivo"><i>Me interesa este contenido</i>
-            <input type="radio" id="motivo" name="motivo"><i>Comerciales</i>
-            <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+    <article class="container">
+        <h3 style="margin: 15px;">Sus raíces</h3>
+        <img class="image" src="/assets/img/paulolondranene.webp" alt="Paulo de pequeño">
+        <p>Paulo Londra nació en 1998 en Córdoba, Argentina. Durante su adolescencia se interesó por el freestyle después de ver batallas en internet. Empezó a participar en competencias locales, donde llamó la atención por su estilo distinto: improvisaba sin insultos y con un enfoque más emocional y positivo.
+        Aunque el freestyle fue lo que lo dio a conocer en la escena urbana de Córdoba, con el tiempo comenzó a enfocarse más en escribir canciones propias. Esa transición lo llevó a grabar su música y preparar lo que sería el inicio de su carrera musical profesional años después.</p>
 
-            <input type="submit" value="Enviar">
+        <img class="image2" src="/assets/img/pauloLondraFreestyle.webp" alt="Paulo Freestyle">
+        <h4 style="margin: 15px;">Su despegue</h4>
+        <p>Paulo Londra inició su carrera musical profesional en 2017 con el lanzamiento de “Relax”, canción que rápidamente lo hizo viral y marcó el comienzo de su ascenso internacional.
+        Poco después firmó con el sello Big Ligas, donde trabajó junto a productores como Ovy on the Drums y Kristo, logrando éxitos como “Adán y Eva”, “Nena Maldición”, “Tal Vez” y su primer álbum “Homerun”.
+        Sin embargo, en 2019 surgió un conflicto legal con Big Ligas por un contrato que, según Paulo, lo perjudicaba y no representaba lo que él había entendido al firmarlo. Esta disputa lo obligó a pausar su carrera durante varios años, sin poder sacar música nueva hasta que el problema se resolvió legalmente tiempo después.</p>
 
-        </form>
-    </div>
+        <img class="image" src="/assets/img/paulolondra2018.webp" alt="Paulo prime">
+        <h5 style="margin: 15px;">El león vuelve a rugir</h5>
+        <p>Tras varios años detenido por el conflicto legal con Big Ligas, Paulo Londra finalmente logró resolver su situación en 2021, recuperando la libertad para volver a crear música. Ese momento marcó una etapa de renacimiento personal y artístico, donde demostró una gran fortaleza interior y una fe constante en que las cosas llegarían a su tiempo.
+        Con un espíritu de superación, Paulo regresó con nuevas canciones como “Plan A” y “Chance”, mostrando que, pese a los obstáculos, su talento y su mensaje seguían intactos. Su retorno no solo fue musical, sino emocional: reconectó con su público, reconstruyó su camino y continuó desarrollando una carrera más madura.
+        Hasta la actualidad, Paulo sigue avanzando con determinación, trabajando en nueva música y manteniendo una actitud de agradecimiento y confianza en Dios, creyendo que cada desafío que enfrentó fortaleció su propósito y lo preparó para una etapa más sólida en su vida artística.</p>
 
+        <div><img src="/assets/img/Paulolondra2025.webp" alt="El león que volvió a rugir"></div>
+    </article>
 
     <footer class="footer">
-        <p>Derechos reservados &copy; 2025
-            by David Reyes
-        </p>
+        <p>Derechos reservados &copy; 2025 by David Reyes</p>
     </footer>
+
 </body>
 </html>
+
+            
